@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rian Web Design — Professional Web Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+<!-- Navigation -->
+<header class="nav-container">
+  <div class="nav-content">
+    <!-- Logo -->
+    <a href="#home" class="logo">
+      <img src="images/rian-logo.png" alt="Rian Web Design Logo">
+    </a>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="btn-contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Web Design,<br><span>At Your Service</span></h2>
+    <p>
+      I design clean, modern websites that help small businesses and creatives
+      look professional and get results online.
+    </p>
+    <a href="#contact" class="btn btn-primary">Order Your Website</a>
+  </div>
+</section>
+
+
+
+  <!-- Features / Selling Points -->
+  <section id="services" class="services">
+    <div class="service-box">
+      <h3>Web Design</h3>
+      <p>Designs that look great and convert visitors into clients.</p>
+    </div>
+    <div class="service-box">
+      <h3>Responsive Development</h3>
+      <p>Fast, mobile-friendly websites that work on all devices.</p>
+    </div>
+    <div class="service-box">
+      <h3>Brand Focused</h3>
+      <p>Your identity, your style, your website tailored to your business.</p>
+    </div>
+  </section>
+
+  <section id="work" class="work-section">
+  <div class="work-container">
+    <h2>My Work</h2>
+    <p>Here are some websites I’ve designed for small businesses and creatives.</p>
+
+    <div class="work-grid">
+      <!-- Work Item 1 -->
+      <div class="work-item">
+        <img src="images/celesyard.jpg" alt="celesyard">
+        <div class="work-overlay">
+          <h3>Business Website</h3>
+          <p>Clean, modern design for a local small business.</p>
+          <a href="https://celesyard.com/" target="_blank" class="btn btn-primary">View Site</a>
+        </div>
+      </div>
+
+      <!-- Work Item 2 -->
+      <div class="work-item">
+        <img src="images/feminar.jpg" alt="feminar">
+        <div class="work-overlay">
+          <h3>Portfolio Website</h3>
+          <p>Designed for a creative professional to showcase their work.</p>
+          <a href="https://feminar.lwacorporate.com/" target="_blank" class="btn btn-primary">View Site</a>
+        </div>
+      </div>
+
+      <!-- Work Item 3 -->
+      <div class="work-item">
+        <img src="images/spinnekop.jpg" alt="spinnekop">
+        <div class="work-overlay">
+          <h3>Landing Page</h3>
+          <p>Responsive landing page built for marketing campaign.</p>
+          <a href="https://spinnekopdotblog.wordpress.com/" target="_blank" class="btn btn-primary">View Site</a>
+        </div>
+      </div>
+      <!-- Add more work items as needed -->
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Get Your Website Today</h2>
+    <p>Fill in your details below or message me on WhatsApp to start your project.</p>
+
+    <form action="https://formsubmit.co/eriancoet@gmail.com" method="POST" class="contact-form">
+      <!-- Optional hidden fields for customization -->
+      <input type="hidden" name="_subject" value="New Website Request">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Tell me about your website" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <p class="whatsapp">
+      Or message me directly on WhatsApp: 
+      <a href="https://wa.me/27979533275" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+    </p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Rian Web Design — South Africa</p>
+  </footer>
+
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = navLinks.querySelectorAll("a");
+
+// Toggle menu on hamburger click
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+
+// Close menu on link click (mobile)
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+  });
+});
+</script>
+
+</body>
+
+</html>
