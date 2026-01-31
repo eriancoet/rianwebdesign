@@ -141,16 +141,51 @@ nav a {
   font-weight: bold;
   border-radius: 6px;
 }
-
-/* Services */
+/* Services Section */
 .services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 4rem 2rem;
+  padding: 4rem 0; /* only vertical padding */
   text-align: center;
 }
 
+/* Heading & intro */
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+/* Flex layout for cards - ensures one row */
+.service-grid {
+  display: flex;
+  justify-content: space-between; /* spread cards across entire width */
+  gap: 2rem; /* space between cards */
+  width: 100%;
+  flex-wrap: nowrap; /* prevents wrapping to multiple rows */
+}
+
+/* Service Cards */
+.service-box {
+  background: #f9f9f9;
+  flex: 1; /* each card takes equal width */
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Card text */
 .service-box h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
@@ -158,7 +193,17 @@ nav a {
 }
 
 .service-box p {
+  font-size: 1rem;
   color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .service-grid {
+    flex-direction: column; /* one card per row */
+    gap: 1.5rem;
+  }
 }
 
 /* Work section */

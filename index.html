@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rian Web Design — Professional Web Design</title>
+
+  <!-- Primary SEO -->
+  <title>Web Designer in South Africa | Rian Web Design</title>
+  <meta name="description" content="Freelance web designer in South Africa creating modern, fast, and mobile-friendly websites for small businesses and creatives.">
+  <meta name="keywords" content="web designer South Africa, freelance web designer, small business websites, responsive web design, affordable web design">
+  <meta name="author" content="Rian Coetzee">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Web Designer in South Africa | Rian Web Design">
+  <meta property="og:description" content="Freelance web designer in South Africa creating modern, fast, and mobile-friendly websites for small businesses and creatives.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.rianwebdesign.co.za">
+  <meta property="og:image" content="images/rian-logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Designer in South Africa | Rian Web Design">
+  <meta name="twitter:description" content="Freelance web designer in South Africa creating modern, fast, and mobile-friendly websites for small businesses and creatives.">
+  <meta name="twitter:image" content="images/rian-logo.png">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Favicon -->
@@ -11,16 +30,13 @@
 </head>
 <body>
 
-  <!-- Navigation -->
 <!-- Navigation -->
 <header class="nav-container">
   <div class="nav-content">
-    <!-- Logo -->
     <a href="#home" class="logo">
       <img src="images/rian-logo.png" alt="Rian Web Design Logo">
     </a>
 
-    <!-- Hamburger (mobile only) -->
     <button class="hamburger" aria-label="Toggle navigation">
       <span></span>
       <span></span>
@@ -35,46 +51,56 @@
   </div>
 </header>
 
-
-  <!-- Hero Section -->
-<section class="hero">
+<!-- Hero Section -->
+<section id="home" class="hero">
   <div class="hero-text">
-    <h2>Web Design,<br><span>At Your Service</span></h2>
+    <h1>Web Designer in South Africa</h1>
+    <h2>Clean, Modern Websites<br><span>At Your Service</span></h2>
     <p>
-      I design clean, modern websites that help small businesses and creatives
-      look professional and get results online.
+      I design professional, fast, and mobile-friendly websites that help small businesses and creatives attract customers online.
     </p>
     <a href="#contact" class="btn btn-primary">Order Your Website</a>
   </div>
 </section>
 
+<!-- Services Section -->
+<section id="services" class="services">
+  <h2>Web Design Services in South Africa</h2>
+  <p class="services-intro">
+    I provide professional web design services for small businesses and creatives. Modern, mobile-friendly, and SEO-ready.
+  </p>
 
-
-  <!-- Features / Selling Points -->
-  <section id="services" class="services">
+  <!-- SINGLE container for all cards -->
+  <div class="service-grid">
     <div class="service-box">
       <h3>Web Design</h3>
       <p>Designs that look great and convert visitors into clients.</p>
     </div>
+
     <div class="service-box">
       <h3>Responsive Development</h3>
       <p>Fast, mobile-friendly websites that work on all devices.</p>
     </div>
+
     <div class="service-box">
-      <h3>Brand Focused</h3>
+      <h3>Brand-Focused Websites</h3>
       <p>Your identity, your style, your website tailored to your business.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="work" class="work-section">
+
+
+<!-- Work / Portfolio Section -->
+<section id="work" class="work-section">
   <div class="work-container">
     <h2>My Work</h2>
-    <p>Here are some websites I’ve designed for small businesses and creatives.</p>
+    <p>Here are some websites I’ve designed for small businesses and creatives in South Africa.</p>
 
     <div class="work-grid">
       <!-- Work Item 1 -->
       <div class="work-item">
-        <img src="images/celesyard.jpg" alt="celesyard">
+        <img src="images/celesyard.jpg" alt="Celesyard Business Website">
         <div class="work-overlay">
           <h3>Business Website</h3>
           <p>Clean, modern design for a local small business.</p>
@@ -84,36 +110,34 @@
 
       <!-- Work Item 2 -->
       <div class="work-item">
-        <img src="images/feminar.jpg" alt="feminar">
+        <img src="images/feminar.jpg" alt="Feminar Portfolio Website">
         <div class="work-overlay">
           <h3>Portfolio Website</h3>
-          <p>Designed for a creative professional to showcase their work.</p>
+          <p>Designed for a creative professional to showcase their work online.</p>
           <a href="https://feminar.lwacorporate.com/" target="_blank" class="btn btn-primary">View Site</a>
         </div>
       </div>
 
       <!-- Work Item 3 -->
       <div class="work-item">
-        <img src="images/spinnekop.jpg" alt="spinnekop">
+        <img src="images/spinnekop.jpg" alt="Spinnekop Landing Page">
         <div class="work-overlay">
           <h3>Landing Page</h3>
-          <p>Responsive landing page built for marketing campaign.</p>
+          <p>Responsive landing page built for a marketing campaign.</p>
           <a href="https://spinnekopdotblog.wordpress.com/" target="_blank" class="btn btn-primary">View Site</a>
         </div>
       </div>
-      <!-- Add more work items as needed -->
     </div>
   </div>
 </section>
 
-  <!-- Contact -->
+<!-- Contact Section -->
 <section id="contact" class="contact-section">
   <div class="contact-container">
     <h2>Get Your Website Today</h2>
     <p>Fill in your details below or message me on WhatsApp to start your project.</p>
 
     <form action="https://formsubmit.co/eriancoet@gmail.com" method="POST" class="contact-form">
-      <!-- Optional hidden fields for customization -->
       <input type="hidden" name="_subject" value="New Website Request">
       <input type="hidden" name="_captcha" value="false">
 
@@ -130,23 +154,21 @@
   </div>
 </section>
 
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2026 Rian Web Design — South Africa</p>
+</footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2026 Rian Web Design — South Africa</p>
-  </footer>
-
+<!-- Hamburger Menu JS -->
 <script>
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = navLinks.querySelectorAll("a");
 
-// Toggle menu on hamburger click
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
-// Close menu on link click (mobile)
 links.forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("open");
@@ -154,6 +176,19 @@ links.forEach(link => {
 });
 </script>
 
-</body>
+<!-- Optional: structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Rian Web Design",
+  "url": "https://www.rianwebdesign.co.za",
+  "logo": "https://www.rianwebdesign.co.za/images/rian-logo.png",
+  "description": "Freelance web designer in South Africa creating modern, fast, and mobile-friendly websites for small businesses and creatives.",
+  "sameAs": [],
+  "areaServed": "South Africa"
+}
+</script>
 
+</body>
 </html>
