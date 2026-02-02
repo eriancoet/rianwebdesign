@@ -351,6 +351,65 @@ nav a {
   background: #1ebe5d;
 }
 
+/* PACKAGES */
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    .packages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    .package {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 20px;
+        transition: transform 0.3s ease;
+    }
+    .package:hover {
+        transform: translateY(-5px);
+    }
+    .package h2 {
+        color: #000000;
+        margin-top: 0;
+    }
+    .package ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .package ul li {
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+    .price {
+        font-weight: bold;
+        color: #0378f6;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+ .packages-heading,
+.packages-intro {
+    text-align: center;
+    max-width: 800px;      /* keeps text readable */
+    margin-left: auto;
+    margin-right: auto;
+}
+.packages-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
 
 /* Footer */
 .footer {
