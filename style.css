@@ -358,11 +358,7 @@ nav a {
         margin: auto;
         padding: 20px;
     }
-    h1 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 40px;
-    }
+  
     .packages-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -378,7 +374,7 @@ nav a {
     .package:hover {
         transform: translateY(-5px);
     }
-    .package h2 {
+    .package h3 {
         color: #000000;
         margin-top: 0;
     }
