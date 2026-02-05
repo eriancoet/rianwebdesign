@@ -28,7 +28,8 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-<body>
+<body class="fade">
+
 
 <!-- Navigation -->
 <header class="nav-container">
@@ -218,6 +219,11 @@ links.forEach(link => {
     navLinks.classList.remove("open");
   });
 });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.remove("fade");
+  });
 </script>
 
 <!-- Optional: structured data for SEO -->

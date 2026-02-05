@@ -10,6 +10,14 @@ body {
   color: #111;
   background: #fff;
   line-height: 1.6;
+   opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+
+
+body.fade {
+  opacity: 0;
 }
 
 /* Navigation */
