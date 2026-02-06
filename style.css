@@ -111,8 +111,10 @@ nav a {
 }
 
 
+/* ================================
+   HERO SECTION
+================================ */
 
-/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -121,6 +123,13 @@ nav a {
   padding: 2rem;
   text-align: center;
   background: #f8f8f8;
+}
+
+.hero-text h1 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .hero-text h2 {
@@ -141,6 +150,10 @@ nav a {
   margin-right: auto;
 }
 
+/* ================================
+   BUTTON
+================================ */
+
 .btn-primary {
   text-decoration: none;
   padding: 1rem 2rem;
@@ -148,7 +161,71 @@ nav a {
   color: #fff;
   font-weight: bold;
   border-radius: 6px;
+  display: inline-block;
 }
+
+/* ================================
+   INITIAL HIDDEN STATE
+================================ */
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero .btn {
+  opacity: 0;
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================================
+   PAGE-LOAD TRIGGERED ANIMATION
+================================ */
+
+/* h2 slides in first */
+body.loaded .hero h2 {
+  animation: slideInLeft 0.9s ease-out forwards;
+}
+
+/* Fade in the rest AFTER h2 */
+body.loaded .hero h1 {
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 0.9s;
+}
+
+body.loaded .hero p {
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 1.3s;
+}
+
+body.loaded .hero .btn {
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 1.7s;
+}
+
+/* Section */
+
 .services {
   padding: 4rem 0; /* vertical padding only */
   text-align: center;
