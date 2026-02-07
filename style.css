@@ -156,13 +156,20 @@ nav a {
 
 .btn-primary {
   text-decoration: none;
-  padding: 1rem 2rem;
-  background: #111;
+  padding: 0.75rem 2rem;
+  background: #2d2d2d;
+  border-radius: 9999px;
   color: #fff;
   font-weight: bold;
-  border-radius: 6px;
   display: inline-block;
+  transition: background 0.3s;
 }
+
+.btn-primary:hover{
+  background: #1a1a1a;
+}
+ 
+
 
 /* ================================
    INITIAL HIDDEN STATE
@@ -278,16 +285,7 @@ body.loaded .hero .btn {
   color: #555;
 }
 
-.services-hero-text .btn {
-  margin-top: 24px;
-  padding: 0.75rem 2rem;
-  background: #2d2d2d;
-  color: #fff;
-  border-radius: 9999px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.3s;
-}
+
 
 .services-hero-text .btn:hover {
   background: #1a1a1a;
@@ -299,6 +297,8 @@ body.loaded .hero .btn {
   display: block;
   margin: 0 auto;
 }
+
+
 
 /* Services Cards Grid (dark box) */
 .services-cards {
