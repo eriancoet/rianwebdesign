@@ -291,13 +291,42 @@ body.loaded .hero .btn {
   background: #1a1a1a;
 }
 
-.services-hero-image img {
+
+.services-hero-image.image-stack {
+  position: relative;
   width: 100%;
-  max-width: 350px; /* slightly smaller to match services page */
-  display: block;
+  max-width: 460px;
+  height: 420px;          /* controls overall stack height */
   margin: 0 auto;
 }
 
+/* shared image styling */
+.services-hero-image.image-stack img {
+  position: absolute;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+}
+
+/* back image */
+.services-hero-image.image-stack .img-back {
+  width: 320px;
+  height: 320px;
+  top: 0;
+  right: 0;          /* 👈 move LEFT */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* front image */
+.services-hero-image.image-stack .img-front {
+  width: 340px;
+  height: 260px;
+  bottom: 0;
+  right: 80px;             /* stays RIGHT */
+  border-radius: 10px;
+  z-index: 2;
+}
 
 
 /* Services Cards Grid (dark box) */
@@ -351,9 +380,7 @@ body.loaded .hero .btn {
     padding: 0 16px; /* reduce padding on mobile */
   }
 
-  .services-hero-image {
-    margin-top: 24px;
-  }
+
 
   .services-cards {
     grid-template-columns: 1fr;
@@ -364,6 +391,22 @@ body.loaded .hero .btn {
   .service-icon {
     width: 32px;
     height: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .services-hero-image.image-stack {
+    height: 360px;
+    max-width: 380px;
+  }
+
+  .services-hero-image.image-stack .img-back {
+    width: 260px;
+    height: 260px;
+  }
+
+  .services-hero-image.image-stack .img-front {
+    width: 300px;
+    height: 220px;
   }
 }
 
