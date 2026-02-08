@@ -750,7 +750,7 @@ body.loaded .hero .btn {
 }
 
 .package-btn--primary:hover {
-  background: #1a1a1a;
+  background: #333;
 }
 
 .package-btn--light {
