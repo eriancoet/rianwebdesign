@@ -125,3 +125,26 @@ body {
     padding: 40px;
   }
 }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+.services {
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 3rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .services {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
