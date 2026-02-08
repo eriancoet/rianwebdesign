@@ -661,12 +661,12 @@ body.loaded .hero .btn {
 .package-price {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #2563eb; /* blue-600 */
+  color: #e03e3e; /* blue-600 */
 }
 
 /* Featured */
 .package-card--featured {
-  border: 2px solid #3b82f6; /* blue-500 */
+  border: 2px solid #111; /* blue-500 */
 }
 
 @media (min-width: 1024px) {
@@ -683,7 +683,7 @@ body.loaded .hero .btn {
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: #3b82f6;
+  background: #111;
   color: #fff;
   padding: 6px 14px;
   border-radius: 999px;
@@ -713,7 +713,7 @@ body.loaded .hero .btn {
   height: 20px;
   border-radius: 999px;
   background: #dbeafe; /* blue-100 */
-  color: #2563eb; /* blue-600 */
+  color: #111; /* blue-600 */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -745,12 +745,12 @@ body.loaded .hero .btn {
 }
 
 .package-btn--primary {
-  background: #2563eb;
+  background: #111;
   color: #fff;
 }
 
 .package-btn--primary:hover {
-  background: #1d4ed8;
+  background: #1a1a1a;
 }
 
 .package-btn--light {
